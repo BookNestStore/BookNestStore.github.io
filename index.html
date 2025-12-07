@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Toko Buku Online</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.8);
+            padding: 10px;
+            z-index: 10;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: transform 0.3s;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .featured {
+            padding: 50px;
+            text-align: center;
+        }
+        .book-card {
+            background: rgba(17, 14, 14, 0.42);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 250px;
+            transition: box-shadow 0.3s;
+        }
+        .book-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .book-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Selamat Datang di Toko Buku Online</h1>
+            <p>Temukan buku favorit Anda dengan mudah!</p>
+        </div>
+    </section>
+    <section class="featured">
+        <h2>Buku Terbaru</h2>
+        <div class="book-card">
+            <img src="buku 1.jpeg" alt="Buku 1">
+            <h3>The Power Of Habits</h3>
+            <p>Rp 85.000</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="book-card">
+            <img src="Filosofi Teras.jpeg" alt="Buku 2">
+            <h3>Filosofi Teras</h3>
+            <p>Rp 100.000</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+</body>
+</html>

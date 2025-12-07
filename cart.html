@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Toko Buku Online</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #a8edea, #fed6e3);
+            color: #333;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.8);
+            padding: 10px;
+            z-index: 10;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: transform 0.3s;
+        }
+        header, nav { /* Sama */ }
+        .cart {
+            padding: 100px 50px;
+        }
+        .cart-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .cart-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        button {
+            background: #ff6b6b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ff5252;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cart">
+        <h1>Keranjang Belanja</h1>
+        <div class="cart-item">
+            <img src="buku 1.jpeg" alt="Buku 1">
+            <div>
+                <h3>The Power Of Habits</h3>
+                <p>Rp 85.000</p>
+            </div>
+            <br><button>Remove</button>
+        </div>
+        <p>Total: Rp 85.000</p>
+        <button>Checkout</button>
+    <div class="cart-item">
+            <img src="novel 3726mdpl.jpeg" alt="Buku 2">
+            <div>
+                <h3>3726 MDPL</h3>
+                <p>Rp 95.000</p>
+            </div>
+            <br><button>Remove</button>
+        </div>
+        <p>Total: Rp 95.000</p>
+        <button>Checkout</button>
+    </section>
+</body>
+</html>
